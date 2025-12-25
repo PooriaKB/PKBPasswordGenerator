@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/4f8398dc-d638-4c71-a741-b256b14f18b1
 ## ⬇️ Download
 
 **Latest Version (Windows 10/11)**  
-[![Download Latest](https://img.shields.io/badge/Download%20Latest-v1.0.0-blue?style=for-the-badge)](https://github.com/PooriaKB/PKBPasswordGenerator/releases/latest/download/PKBPasswordGenerator.Setup.msi)
+[![Download Latest](https://img.shields.io/badge/Download%20Latest-v1.0.0-blue?style=for-the-badge)](https://github.com/PooriaKB/PKBPasswordGenerator/releases/download/v1.0.0/PKBPasswordGen.msi)
 
 > Installer includes desktop shortcut
 
