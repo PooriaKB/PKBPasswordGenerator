@@ -56,7 +56,12 @@ https://github.com/user-attachments/assets/4f8398dc-d638-4c71-a741-b256b14f18b1
 - Since your vault is encrypted no one can access your passwords from anywhere, except from this app by having your master password.AGAIN DON'T FORGET IT!
 - You can install the app on multiple devices and use the same vault file by copying it to the same location on other devices but you must have the vault master password.
 
-
+## 📝 Additional note
+- This is my first WPF project & I didn't learn many concepts like MVVM or Data binding before this project so the code structure might not be optimal.
+- I tried to keep the dependencies minimal so I didn't use any third party libraries for encryption or UI components.
+- The app is tested on Windows 10 and 11 but it should work on older versions of Windows that support WPF.
+- There will be improvements and new features in future updates based on user feedback.
+- Feel free to open issues or contribute on GitHub!
 ## License
 
 MIT License — feel free to use and modify.
