@@ -4,13 +4,11 @@
 
 A **secure, offline password manager** built with WPF (C#) featuring strong encryption, modern UI, and local vault storage.
 
-## ?? Overview Video
+## Overview Video
 
 Watch the app in action:
 
-<video src="https://github.com/PooriaKB/PKBPasswordGenerator/raw/main/overview.mkv" controls width="100%">
-  Your browser does not support the video tag.
-</video>
+![Overview](overview.mp4)
 
 *(Click to play the demo)*
 
@@ -23,10 +21,10 @@ Watch the app in action:
 - Custom dark theme with draggable title bar
 - Vault protected against accidental deletion/modification
 
-## ?? Download
+## Download
 
 **Latest Version (Windows 10/11)**  
-[![Download PKB Password Generator](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge)](https://github.com/PooriaKB/PKBPasswordGenerator/releases/latest/download/PKBPasswordGen.Setup.msi)
+[![Download Latest](https://img.shields.io/badge/Download%20Latest-v1.0.0-blue?style=for-the-badge)](https://github.com/PooriaKB/PKBPasswordGenerator/releases/latest/download/PKBPasswordGenerator.Setup.msi)
 
 > Installer includes desktop shortcut
 
@@ -49,7 +47,7 @@ Watch the app in action:
 - Encrypted with industry-standard AES-GCM
 - No data sent online — 100% offline
 
-## ?? Read With Caution
+## !!! Read With Caution
 
 - Remember your master password! No recovery option.
 - Backup your vault file regularly.(Preferably to a cloud storage like Google Drive)
@@ -64,4 +62,4 @@ MIT License — feel free to use and modify.
 
 ---
 
-Made with ?? by Pooria Kordbacheh
+Made with  by Pooria Kordbacheh
