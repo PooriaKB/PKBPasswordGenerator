@@ -8,7 +8,7 @@ A **secure, offline password manager** built with WPF (C#) featuring strong encr
 
 Watch the app in action:
 
-<video src="https://github.com/PooriaKB/PKBPasswordGen/raw/main/overview.mkv" controls width="100%">
+<video src="https://github.com/PooriaKB/PKBPasswordGenerator/raw/main/overview.mkv" controls width="100%">
   Your browser does not support the video tag.
 </video>
 
@@ -26,7 +26,7 @@ Watch the app in action:
 ## ?? Download
 
 **Latest Version (Windows 10/11)**  
-[![Download PKB Password Generator](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge)](https://github.com/PooriaKB/PKBPasswordGen/releases/latest/download/PKBPasswordGen.Setup.msi)
+[![Download PKB Password Generator](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge)](https://github.com/PooriaKB/PKBPasswordGenerator/releases/latest/download/PKBPasswordGen.Setup.msi)
 
 > Installer includes desktop shortcut
 
@@ -47,7 +47,7 @@ Watch the app in action:
 
 - Vault stored in `%AppData%\Roaming\PKBPasswordGenerator`
 - Encrypted with industry-standard AES-GCM
-- No data sent online — 100% offline
+- No data sent online â€” 100% offline
 
 ## ?? Read With Caution
 
@@ -60,7 +60,7 @@ Watch the app in action:
 
 ## License
 
-MIT License — feel free to use and modify.
+MIT License â€” feel free to use and modify.
 
 ---
 
