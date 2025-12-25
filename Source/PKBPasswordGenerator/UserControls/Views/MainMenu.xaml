@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="PKBPasswordGenerator.UserControls.Views.MainMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PKBPasswordGenerator.UserControls.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="600" d:Background="#212F3C">
+    <Grid Margin="0,50,0,0">
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+
+            <Label Margin="0,0,0,20" Name="txtGreating"></Label>
+            
+            <Button Width="360" Height="50" Margin="0,50,0,0" Name="btnGeneratePass" Click="btnGeneratePass_Click">Generate a new password</Button>
+            <Button  Width="360" Height="50" Margin="0,20,0,0" Name="btnShowOldGeneratedPasswordsList" Click="btnShowOldGeneratedPasswordsList_Click">Show old generated passwords
+            </Button>
+            <Button  Width="125" Height="50" Margin="0,20,0,0" Name="btnLogout" Click="btnLogout_Click" Style="{StaticResource Logout}">Logout
+            </Button>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

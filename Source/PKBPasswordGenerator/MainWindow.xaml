@@ -1,0 +1,33 @@
+﻿<Window x:Class="PKBPasswordGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PKBPasswordGenerator"
+        xmlns:UserControls="clr-namespace:PKBPasswordGenerator.UserControls.Controls"
+        mc:Ignorable="d"
+        Title="PKB PasswordGen" Height="650" Width="600" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" WindowStyle="None"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        AllowsTransparency="True" Background="Transparent">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CornerRadius="25"/>
+    </WindowChrome.WindowChrome>
+
+    <Border Background="#212F3C" Height="650" Width="600" BorderBrush="White" BorderThickness="2" CornerRadius="25">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <UserControls:TitleBar  VerticalAlignment="Top"/>
+
+            <ContentControl Grid.Row="1" x:Name="MainContentArea"
+                            Margin="30"/>
+
+        </Grid>
+    </Border>
+
+</Window>
