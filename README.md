@@ -2,7 +2,7 @@
 
 ![App Preview](overview.gif) <!-- We'll make a GIF from your video -->
 
-A **secure, offline password manager** built with WPF (C#) featuring strong encryption, modern UI, and local vault storage.
+A **secure, offline random password generator** built with WPF (C#) featuring strong encryption, modern UI, and local vault storage.
 
 ## 🎬 Overview Video
 
