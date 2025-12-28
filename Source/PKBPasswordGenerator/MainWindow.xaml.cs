@@ -66,9 +66,7 @@ namespace PKBPasswordGenerator
 
         private void MainWindow_Closing(object? sender, CancelEventArgs e)
         {
-            var mainWindow = Window.GetWindow(this) as MainWindow;
-            if (mainWindow == null) return;
-
+            // 'this' is already the window being closed
             // Show confirmation popup
             var confirmation = MessageBox.Show(
                 "Are you sure you want to close the app?",
@@ -76,32 +74,29 @@ namespace PKBPasswordGenerator
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Question);
 
-            // If user clicks "No", cancel the closing
-            if (confirmation == MessageBoxResult.Yes)
+            if (confirmation == MessageBoxResult.No)
             {
-                if (mainWindow.MainContentArea.Content is LoginView || mainWindow.MainContentArea.Content is RegistrerView)
-                {
-                    mainWindow.Close();
-                }
-                else
-                {
-                    try
-                    {
-                        mainWindow.CurrentVault.SaveVault(mainWindow.DerivedKey, mainWindow.CurrentPasswordDataAccess.Passwords, mainWindow.VaultFilePath);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-
-                    mainWindow.Close();
-                }
-
+                e.Cancel = true;
+                return;
             }
-            else
+
+            // User chose Yes — perform required cleanup/save here.
+            if (!(MainContentArea.Content is LoginView) && !(MainContentArea.Content is RegistrerView))
             {
-                e.Cancel = true; // Cancel the closing event
+                try
+                {
+                    CurrentVault.SaveVault(DerivedKey, CurrentPasswordDataAccess.Passwords, VaultFilePath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    // Keep window open because save failed
+                    e.Cancel = true;
+                    return;
+                }
             }
+
+            // Do NOT call Close() here — allow the current close to continue.
         }
 
         internal void ShowLoginView()
