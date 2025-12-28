@@ -30,6 +30,10 @@ https://github.com/user-attachments/assets/4f8398dc-d638-4c71-a741-b256b14f18b1
 > Installer includes desktop shortcut <br/>
 > Please uninstall previous versions before installing the new one
 
+## v1.0.1 fixes :
+- App closing & opening loading speed
+- General optimization
+
 ## ✅ Installation
 
 1. Download the `.msi` from the link above
